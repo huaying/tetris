@@ -1,38 +1,24 @@
-This project was bootstrapped with [Create React Library](https://github.com/udilia/create-react-library).
+## React Tetris Component
 
-All library files are located inside **src/lib** folder.
+<img width="365" alt="Screen Shot 2019-11-16 at 1 07 07 AM" src="https://user-images.githubusercontent.com/3991678/68961666-d5a24500-080d-11ea-95a2-065d8c4ee5cc.png">
 
-Inside **src/demo** folder, you can test your library while developing.
+### Usage
+```jsx
+import React from "react";
+import Tetris from "@huaying/tetris";
 
-## Available Scripts
+const App = () => (
+  <Tetris>
+    {gameStart => (
+      <div className="info">
+        <span className="title"> Tetris </span>
+        <span className="start" onClick={gameStart}>
+          Start
+        </span>
+      </div>
+    )}
+  </Tetris>
+);
 
-In the project directory, you can run:
-
-### `npm start` or `yarn start`
-
-Runs the library in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm run test` or `yarn run test`
-
-Runs the test watcher in an interactive mode.
-
-### `npm run build` or `yarn build`
-
-Builds the library for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm publish`
-
-Publishes the library to NPM.
-
-## Typescript
-
-[Adding Typescript support](https://gist.github.com/DimiMikadze/f25e1c5c70fa003953afd40fa9042517)
-
-## Troubleshooting
-
-### Usage of other libraries within your library
-
-- Add the library as a peer dependency in package.json (effectively requiring the calling project to provide this dependency)
-- Add the library as a dev dependency in package.json (effectively allowing this library to successfully build without complaining about not having this dependency)
-- Add the library to the externals config in your webpack.config file(s). By default, only react and react-dom are there, meaning that those are the only two libraries that you can use within your new shared library.
+export default App;
+```
