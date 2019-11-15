@@ -1,11 +1,18 @@
-import React from 'react';
-import Example from '../lib';
-import { SecondExample } from '../lib';
+import React from "react";
+import Tetris from "../lib";
 
 const App = () => (
-  <div>
-    <Example />
-    <SecondExample />
+  <div className="app">
+    <Tetris>
+      {gameStart => (
+        <div className="info">
+          <span className="title"> Tetris </span>
+          <span className="start" onClick={gameStart}>
+            Start
+          </span>
+        </div>
+      )}
+    </Tetris>
   </div>
 );
 

@@ -9,7 +9,9 @@
     "test": "node scripts/test.js"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^4.4.1"
+  },
   "devDependencies": {
     "@babel/core": "7.6.0",
     "@svgr/webpack": "4.3.2",
