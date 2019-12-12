@@ -1,8 +1,11 @@
 ## React Tetris Component
 
-<img width="365" alt="Screen Shot 2019-11-16 at 1 07 07 AM" src="https://user-images.githubusercontent.com/3991678/68961666-d5a24500-080d-11ea-95a2-065d8c4ee5cc.png">
-
-Play Tetris on [Codesandbox](https://codesandbox.io/s/github/huaying/react-tetris)
+### Install
+```
+npm install @huaying/tetris --save
+// or
+yarn add @huaying/tetris
+```
 
 ### Usage
 ```jsx
@@ -24,3 +27,7 @@ const App = () => (
 
 export default App;
 ```
+
+<img width="365" alt="Screen Shot 2019-11-16 at 1 07 07 AM" src="https://user-images.githubusercontent.com/3991678/68961666-d5a24500-080d-11ea-95a2-065d8c4ee5cc.png">
+
+Play Tetris on [Codesandbox](https://codesandbox.io/s/github/huaying/react-tetris)
